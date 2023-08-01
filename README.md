@@ -1,4 +1,6 @@
-# 网易云音乐
+# 网易云音乐 Chrome Extension
+
+all in browser!
 
 ![应用截图](https://github.com/ycace/netease-music-crx/blob/main/screenshot.png?raw=true)
 
