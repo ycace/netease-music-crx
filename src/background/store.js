@@ -51,19 +51,7 @@ export function updateAudioTime(currentTime) {
   if (audio) {
     audio.currentTime = currentTime;
   }
-  audio.play().then(() => {
-    //updat media session
-    console.log("play");
-    navigator.mediaSession.metadata = new MediaMetadata({
-      title: store.selectedSong.name,
-    });
-    navigator.mediaSession.setPositionState({
-      playbackState: "playing",
-      duration: audio.duration,
-      playbackRate: audio.playbackRate,
-      position: audio.currentTime,
-    });
-  });
+  audio.play();
 }
 
 export async function togglePlaying() {
@@ -86,19 +74,7 @@ export async function togglePlaying() {
       );
       updateAudioTime(currentTime);
     }
-    audio.play().then(() => {
-      //updat media session
-      console.log("play");
-      navigator.mediaSession.metadata = new MediaMetadata({
-        title: store.selectedSong.name,
-      });
-      navigator.mediaSession.setPositionState({
-        playbackState: "playing",
-        duration: audio.duration,
-        playbackRate: audio.playbackRate,
-        position: audio.currentTime,
-      });
-    });
+    audio.play();
     playing = true;
   }
   store.playing = playing;
@@ -311,6 +287,15 @@ function persistSave() {
     playlistId: selectedPlaylist?.id || null,
     songId: selectedSong?.id || null,
   };
+  navigator.mediaSession.metadata = new MediaMetadata({
+    title: store.selectedSong.name,
+  });
+  navigator.mediaSession.setPositionState({
+    playbackState: "playing",
+    duration: audio.duration,
+    playbackRate: audio.playbackRate,
+    position: audio.currentTime,
+  });
   return saveData(data);
 }
 
