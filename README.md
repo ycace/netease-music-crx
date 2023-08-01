@@ -1,6 +1,6 @@
 # 网易云音乐
 
-![应用截图](https://user-images.githubusercontent.com/4012553/140094889-71088388-7d10-47b2-8e2d-3c306dc0160f.png)
+![应用截图](https://github.com/ycace/netease-music-crx/blob/main/screenshot.png?raw=true)
 
 ## 声明
 
