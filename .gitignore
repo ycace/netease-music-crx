@@ -17,5 +17,4 @@
 *.log
 
 /tmp
-*.zip
 .vscode
