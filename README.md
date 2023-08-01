@@ -26,7 +26,7 @@ fork from [sigoden/netease-music-crx](https://github.com/sigoden/netease-music-c
 
 - 开发者模式加载`build`目录
 
-- 手动下载[压缩包](https://github.com/sigoden/netease-music-crx/releases/latest)安装
+- 手动下载[压缩包](https://github.com/ycace/netease-music-crx/releases/latest)安装
 
 - 通过[Chrome应用商店](https://chrome.google.com/webstore/detail/ekmamdknmdolmmjbgpmnkiobcnihdhhf)安装
 
