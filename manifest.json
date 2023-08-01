@@ -1,0 +1,32 @@
+{
+  "name": "网易云音乐",
+  "version": "1.0",
+  "author": "sigoden@gmail.com",
+  "manifest_version": 2,
+  "homepage_url": "https://github.com/sigoden/netease-music-crx",
+  "background": {
+    "persistent": true,
+    "page": "background.html"
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon34.png"
+  },
+  "icons": {
+    "128": "icon128.png",
+    "48": "icon128.png",
+    "16": "icon128.png"
+  },
+  "permissions": [
+    "storage",
+    "webRequest",
+    "webRequestBlocking",
+    "contextMenus",
+    "https://music.163.com/",
+    "*://*.kuwo.cn/",
+    "*://*.migu.cn/"
+  ],
+  "update_url": "http://clients2.google.com/service/update2/crx",
+  "minimum_chrome_version": "29",
+  "content_security_policy": "script-src 'self'; object-src 'self'"
+}
